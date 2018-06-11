@@ -15,26 +15,22 @@
 
 // var data=[{  city:"Anonymous",  beautifulRatio:1230},{  city:"Non-Anonymous",  beautifulRatio:3420}];
 
-    $("#chart").empty();
-
-  
+$("#chart").empty();
 
 d3.json('JSONData_1.json', function(data){
-  console.log(data);
+  console.log(data.array);
 
   var pieChartConfig = {
     mainDiv: "#chart",
     colorRange: ["#f44842", "#f4b841", "#f4f141", "#46f441", "#41f4d9", "#4941f4", "#f441d6"],
-    data: null,
+    data: data.array,
     caption:"city",
-    tooltipLable:"Users",
+    tooltipLable:"city",
     value:"beautifulRatio",
     centerLabel:"Classsification of users"
   };
 
-
-  pieChartConfig.data = data;
-  var pieChart = new pieChart(pieChartConfig);
+  var pieChart_1 = new pieChart(pieChartConfig);
 })
 
 </script>

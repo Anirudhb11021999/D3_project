@@ -1,1 +1,6 @@
-{ "city": "Anonymous", "beautifulRatio": 1234},{"city": "Non-Anonymous", "beautifulRatio": 2345}
+{
+  "array": [
+    { "city": "Anonymous", "beautifulRatio": 1234},
+    {"city": "Non-Anonymous", "beautifulRatio": 2345}
+  ]
+}
